@@ -1,24 +1,24 @@
 import requests
 
-def get_weather_data(place, params=None):
-    url = f'https://wttr.in/{place}'
+def fetch_weather_data(location, params=None):
+    url = f'https://wttr.in/{location}'
     response = requests.get(url, params=params)
     response.raise_for_status()
+
     return response.text
 
-# Для Лондона
-# Для аэропорта Шереметьево
-# Для Череповца
-
-
-
 if __name__ == '__main__':
-    places = ['Лондон', 'svo', 'Череповец']
+    locations = ['Лондон', 'svo', 'Череповец']
     payload = {
         'lang': 'ru',
         'nTq': ''
     }
-    for place in places:
-        response = get_weather_data(place, payload)
+
+    for location in locations:
+        try:
+            response = fetch_weather_data(location, payload)
+        except requests.exceptions.HTTPError as e:
+            exit("Can't fetch weather data for '{}': {}".format(location, e))
+
         print(response)
         print('='*60)

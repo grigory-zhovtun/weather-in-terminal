@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="221637f4-3f5d-4921-bc97-ca8097edef03" name="Changes" comment="create get_weather_data functions and print result to terminal">
+    <list default="true" id="221637f4-3f5d-4921-bc97-ca8097edef03" name="Changes" comment="add payload from documentation&#10;add places ['Лондон', 'svo', 'Череповец']&#10;get weather for each place">
+      <change afterPath="$PROJECT_DIR$/parameters.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -67,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733138677677</updated>
-      <workItem from="1733138678710" duration="6589000" />
+      <workItem from="1733138678710" duration="10731000" />
     </task>
     <task id="LOCAL-00001" summary="create get_weather_data functions and print result to terminal">
       <option name="closed" value="true" />
@@ -77,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733141721027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add payload from documentation&#10;add places ['Лондон', 'svo', 'Череповец']&#10;get weather for each place">
+      <option name="closed" value="true" />
+      <created>1733148804940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733148804940</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create get_weather_data functions and print result to terminal" />
-    <option name="LAST_COMMIT_MESSAGE" value="create get_weather_data functions and print result to terminal" />
+    <MESSAGE value="add payload from documentation&#10;add places ['Лондон', 'svo', 'Череповец']&#10;get weather for each place" />
+    <option name="LAST_COMMIT_MESSAGE" value="add payload from documentation&#10;add places ['Лондон', 'svo', 'Череповец']&#10;get weather for each place" />
   </component>
 </project>
