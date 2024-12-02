@@ -1,14 +1,24 @@
 import requests
 
-def get_weather_data(url, payload):
-    response = requests.get(url, payload)
-    return response
+def get_weather_data(place, params=None):
+    url = f'https://wttr.in/{place}'
+    response = requests.get(url, params=params)
+    response.raise_for_status()
+    return response.text
+
+# Для Лондона
+# Для аэропорта Шереметьево
+# Для Череповца
+
+
 
 if __name__ == '__main__':
-    url = 'https://wttr.in'
-    payload = '/san%20francisco?nTqu&lang=en'
-
-    response = get_weather_data(url, payload)
-    response.raise_for_status()
-
-    print(response.text)
+    places = ['Лондон', 'svo', 'Череповец']
+    payload = {
+        'lang': 'ru',
+        'nTq': ''
+    }
+    for place in places:
+        response = get_weather_data(place, payload)
+        print(response)
+        print('='*60)
