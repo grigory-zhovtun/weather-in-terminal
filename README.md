@@ -23,4 +23,5 @@ This Python script retrieves weather information for specified locations using t
    ```bash
    pip install requests
 3. Run the script:
-   ```python main.py```
+   ```bash
+   python main.py
