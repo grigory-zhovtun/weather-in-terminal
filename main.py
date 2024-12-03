@@ -11,7 +11,7 @@ if __name__ == '__main__':
     locations = ['Лондон', 'svo', 'Череповец']
     payload = {
         'lang': 'ru',
-        'nTq': ''
+        'nTqM': ''
     }
 
     for location in locations:
