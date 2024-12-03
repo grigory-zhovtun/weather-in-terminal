@@ -1,7 +1,8 @@
 import requests
+from urllib.parse import urljoin
 
 def fetch_weather_data(location, params=None):
-    url = f'https://wttr.in/{location}'
+    url = urljoin('https://wttr.in', location)
     response = requests.get(url, params=params)
     response.raise_for_status()
 
