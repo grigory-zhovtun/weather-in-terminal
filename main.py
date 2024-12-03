@@ -17,9 +17,9 @@ if __name__ == '__main__':
 
     for location in locations:
         try:
-            response = fetch_weather_data(location, payload)
+            weather_in_current_location = fetch_weather_data(location, payload)
         except requests.exceptions.HTTPError as e:
             exit("Can't fetch weather data for '{}': {}".format(location, e))
 
-        print(response)
+        print(weather_in_current_location)
         print('='*60)
