@@ -1,6 +1,6 @@
 # Weather Fetcher
 
-This Python script retrieves weather information for specified locations using the **wttr.in** service. The script is designed for quick weather checks in a simple text format.
+This Python script retrieves weather information for specified locations using the [wttr.in](https://wttr.in) service. The script is designed for quick weather checks in a simple text format.
 
 ---
 
