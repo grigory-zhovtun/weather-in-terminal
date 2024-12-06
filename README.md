@@ -13,15 +13,25 @@ This Python script retrieves weather information for specified locations using t
 
 ## Prerequisites
 - Python 3.6 or later
-- `requests` library (`pip install requests`)
+- A `requirements.txt` file specifying dependencies
 
 ---
 
-## Usage
-1. Clone the repository or download the script.
-2. Install the required dependencies:
+## Installation and Setup
+
+1. **Clone the repository or download the script:**  
+   Ensure you have the `main.py` script and the `requirements.txt` file.
+
+2. **(Optional) Create and activate a virtual environment:**  
+   While not strictly required, using a virtual environment is recommended to avoid conflicts with other Python packages.
    ```bash
-   pip install requests
-3. Run the script:
+   python -m venv venv
+   source venv/bin/activate       # Linux/macOS
+   venv\Scripts\activate          # Windows
+3. Install dependencies from requirements.txt:
+This ensures consistent and tested versions of the packages.
+   ```bash
+   pip install -r requirements.txt
+4. Run the script:
    ```bash
    python main.py
